@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkeNews - The Full Story, First</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+
+    <!-- Top Bar -->
+    <div class="bg-red-700 text-white text-xs py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="bg-black px-2 py-0.5 rounded font-bold uppercase">Breaking</span>
+                <p class="truncate">Global markets rally as tech stocks surge to an all-time high this quarter.</p>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <span><i class="fa-solid fa-calendar-day"></i> Friday, Sep 25, 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-black tracking-tighter text-red-700">SKE<span class="text-black">NEWS</span>.IO</a>
+            
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="index.html" class="text-red-700 hover:text-red-600">Home</a>
+                <a href="category.html?cat=world" class="hover:text-red-600">World</a>
+                <a href="category.html?cat=tech" class="hover:text-red-600">Technology</a>
+                <a href="category.html?cat=business" class="hover:text-red-600">Business</a>
+                <a href="category.html?cat=entertainment" class="hover:text-red-600">Entertainment</a>
+                <a href="contact.html" class="hover:text-red-600">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="#" class="bg-red-600 text-white px-4 py-2 rounded text-xs font-bold uppercase hover:bg-red-700 transition"><i class="fa-solid fa-video"></i> Live TV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Featured News -->
+    <section class="container mx-auto px-4 my-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Main Big Story -->
+            <div class="lg:col-span-2 relative bg-black rounded-lg overflow-hidden shadow-lg group">
+                <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1000&q=80" alt="News" class="w-full h-[400px] object-cover opacity-80 group-hover:scale-105 transition duration-500">
+                <div class="absolute bottom-0 p-6 bg-gradient-to-t from-black via-black/60 to-transparent text-white w-full">
+                    <span class="bg-red-600 text-xs px-2.5 py-1 rounded font-semibold uppercase">World Politics</span>
+                    <h1 class="text-2xl md:text-3xl font-bold mt-2 leading-tight">Major Diplomatic Breakthrough Reached at International Global Summit</h1>
+                    <p class="text-gray-300 text-sm mt-2 line-clamp-2">World leaders agree on new frameworks to tackle global economic challenges and digital security threats moving forward into 2026.</p>
+                </div>
+            </div>
+
+            <!-- Side Breaking Feed -->
+            <div class="bg-white p-5 rounded-lg shadow-md flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold border-b pb-2 mb-4 text-red-700 flex items-center justify-between">
+                        <span>Latest Updates</span>
+                        <i class="fa-solid fa-bolt text-sm"></i>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="border-b pb-3">
+                            <span class="text-xs text-gray-500 font-semibold">15 mins ago</span>
+                            <h4 class="font-bold text-sm hover:text-red-600 cursor-pointer">AI-powered robotics transforming modern manufacturing lines.</h4>
+                        </div>
+                        <div class="border-b pb-3">
+                            <span class="text-xs text-gray-500 font-semibold">42 mins ago</span>
+                            <h4 class="font-bold text-sm hover:text-red-600 cursor-pointer">Space agency announces upcoming crewed mission objectives.</h4>
+                        </div>
+                        <div>
+                            <span class="text-xs text-gray-500 font-semibold">1 hour ago</span>
+                            <h4 class="font-bold text-sm hover:text-red-600 cursor-pointer">Global renewable energy adoption exceeds initial yearly projections.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 bg-gray-50 p-3 rounded text-center border">
+                    <p class="text-xs text-gray-600 font-medium">Want news alerts straight to your browser?</p>
+                    <button class="mt-2 bg-black text-white text-xs px-3 py-1.5 rounded font-bold hover:bg-gray-800">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid Section -->
+    <section class="container mx-auto px-4 my-10">
+        <h2 class="text-2xl font-black mb-6 border-l-4 border-red-700 pl-3">Trending Stories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Tech">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-red-600 uppercase">Technology</span>
+                    <h3 class="font-bold text-lg mt-1 mb-2">The Next Gen Processing Chips Are Here</h3>
+                    <p class="text-gray-600 text-sm">Discover how modern architecture is redefining speed, energy efficiency, and artificial intelligence integration.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Business">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-red-600 uppercase">Business</span>
+                    <h3 class="font-bold text-lg mt-1 mb-2">Startup Valuations Shift in Modern Markets</h3>
+                    <p class="text-gray-600 text-sm">Investors are focusing heavily on sustainable growth models rather than rapid scaling strategies.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="Gaming">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-red-600 uppercase">Entertainment</span>
+                    <h3 class="font-bold text-lg mt-1 mb-2">Immersive Media and Virtual Reality Trends</h3>
+                    <p class="text-gray-600 text-sm">How developers are pushing visual limits to construct ultra-realistic experiences for users globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10 mt-16">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-2xl font-black text-red-600 mb-3">SKENEWS.IO</h3>
+                <p class="text-gray-400 text-sm">Your trusted source for real-time global breaking news, tech trends, and in-depth analysis.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Categories</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">World News</a></li>
+                    <li><a href="#" class="hover:text-white">Technology</a></li>
+                    <li><a href="#" class="hover:text-white">Business</a></li>
+                    <li><a href="#" class="hover:text-white">Entertainment</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Connect</h4>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="hover:text-red-500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
+            &copy; 2026 skenews.io. All rights reserved. Built for GitHub Pages.
+        </div>
+    </footer>
+
+</body>
+</html>

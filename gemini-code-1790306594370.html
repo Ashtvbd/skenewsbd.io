@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - SkeNews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-black tracking-tighter text-red-700">SKE<span class="text-black">NEWS</span>.IO</a>
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="index.html" class="hover:text-red-600">Home</a>
+                <a href="category.html?cat=world" class="hover:text-red-600">World</a>
+                <a href="category.html?cat=tech" class="hover:text-red-600">Technology</a>
+                <a href="category.html?cat=business" class="hover:text-red-600">Business</a>
+                <a href="contact.html" class="hover:text-red-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Header Dynamic Title -->
+    <div class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 id="category-title" class="text-4xl font-black uppercase tracking-wide">Category News</h1>
+            <p class="text-gray-400 text-sm mt-2">Showing all the latest updates under this section.</p>
+        </div>
+    </div>
+
+    <!-- Content Listing -->
+    <section class="container mx-auto px-4 my-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="news-container">
+            <!-- Dynamic Injection simulation -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover" alt="News">
+                <div class="p-5">
+                    <span class="text-xs font-bold text-red-600 uppercase">Updates</span>
+                    <h3 class="font-bold text-lg mt-1 mb-2">Global Infrastructure Projects Accelerated</h3>
+                    <p class="text-gray-600 text-sm">Governments partner with leading tech firms to fast-track sustainable city planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-6 text-center text-xs text-gray-500 mt-20">
+        &copy; 2026 skenews.io. All rights reserved.
+    </footer>
+
+    <script>
+        // Simple URL Parameter Reader to simulate dynamic PHP style category loading
+        const params = new URLSearchParams(window.location.search);
+        const cat = params.get('cat');
+        if(cat) {
+            document.getElementById('category-title').innerText = cat + " News Feed";
+        }
+    </script>
+</body>
+</html>

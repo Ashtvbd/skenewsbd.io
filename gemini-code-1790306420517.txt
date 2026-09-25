@@ -1,0 +1,6 @@
+skenews/
+├── index.html
+├── category.html
+├── contact.html
+└── assets/
+    └── style.css (ঐচ্ছিক, Tailwind CDN ব্যবহার করা হয়েছে)

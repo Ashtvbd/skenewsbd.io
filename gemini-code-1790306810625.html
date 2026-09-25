@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SkeNews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-900">
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-black tracking-tighter text-red-700">SKE<span class="text-black">NEWS</span>.IO</a>
+            <a href="index.html" class="text-sm font-semibold hover:text-red-600">&larr; Back to Home</a>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-12 max-w-xl">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-2xl font-black mb-6 text-red-700">Contact Our Newsroom</h1>
+            <form onsubmit="alert('Thank you! Your message has been sent successfully.'); return false;" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold mb-1">Your Name</label>
+                    <input type="text" required class="w-full border px-3 py-2 rounded focus:outline-none focus:border-red-600">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Email Address</label>
+                    <input type="email" required class="w-full border px-3 py-2 rounded focus:outline-none focus:border-red-600">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">Message</label>
+                    <textarea rows="4" required class="w-full border px-3 py-2 rounded focus:outline-none focus:border-red-600"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 text-white font-bold py-2 rounded hover:bg-red-700 transition">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
